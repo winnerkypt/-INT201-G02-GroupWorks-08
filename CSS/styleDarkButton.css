@@ -6,14 +6,12 @@
 }
 
 :root {
-    /* --clr-light: white; */
     --clr-dark: black;
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
 }
 
 .darkmode {
-    /* --clr-light: white; */
     --clr-dark: #656973;
     --foreground: var(--clr-light);
     --background: var(--clr-dark);
@@ -27,9 +25,6 @@ body {
 }
 
 .dark-mode-toggle {
-    position: absolute;
-    z-index: 100;
-    top: -43px;
     right: 1em;
     color: var(--foreground);
     background-color: var(--background);
@@ -40,20 +35,4 @@ body {
     border-radius: 10px;
     width: 30px;
     height: 30px;
-}
-
-
-/* 
-.click-here {
-    color: var(--foreground);
-    width: 100px;
-    right: 1.5em;
-    position: fixed;
-    top: 4em;
-} */
-
-.bottomright {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
 }

@@ -9,13 +9,12 @@ if (localStorage.length < 1) { //เช็กว่ามีอะไรอย�
 } else {
     cartNumbers.innerHTML = `${localStorage.getItem("amount")}`;
 }
-
-
+let cart = []
+let quality = 0;
 for (let i = 0; i < addCart.length; i++) {
-    let quality = 0;
-    let cart = []
+
     addCart[i].addEventListener("click", () => {
-        
+
         if (product[i].productId != cart) { //เช็กว่าสินค้าอยู่ในตะกร้ายัง 
             cart = product[i].productId //ถ้ายังให้เอาลงตะกร้าแล้วตั้งไอดีสินค้านั้นเป็น 1
             localStorage.setItem(product[i].productId, quality = 1)
@@ -34,6 +33,8 @@ clear.addEventListener("click", () => {
     console.log(cart)
     localStorage.clear()
     localStorage.setItem("amount", 0);
+    quality = 0;
+    cart = [];
     amount = localStorage.getItem("amount")
     cartNumbers.innerHTML = `${amount}`;
 })

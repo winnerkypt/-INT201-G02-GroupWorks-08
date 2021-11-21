@@ -13,7 +13,7 @@ function listProduct() {
         divProducts.setAttribute("id", product[i].productId);
         divProducts.setAttribute("class", "card");
         divProducts.style = 'width:18rem;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);';
-
+        
         let imgShein = document.createElement("div");
         imgShein.innerHTML += `<img class='card-img-top' src='${product[i].productImg}' width="250px">`;
 
@@ -25,7 +25,7 @@ function listProduct() {
 
         let list = document.createElement("ul");
         list.setAttribute("class", "list-unstyled");
-        list.innerHTML += `<li class='card-text'>Des : ${product[i].productDesc}</li>`;
+        list.innerHTML += `<li class='card-text'>Description : ${product[i].productDesc}</li>`;
         list.innerHTML += `<li class='card-text'>Price ${product[i].productPrice}</li>`;
         list.innerHTML += `<li class='card-text'>Stock : ${product[i].productStock}</li>`;
 

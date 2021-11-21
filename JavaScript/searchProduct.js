@@ -1,3 +1,4 @@
+const productsList = document.querySelector("#products");
 const search = document.querySelector("#search");
 let check = false;
 let filterSearch = search.addEventListener("click", () => {

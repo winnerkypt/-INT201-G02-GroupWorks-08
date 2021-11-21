@@ -1,33 +1,7 @@
 import { product } from "./product.js";
-// import { filterSearch as search } from "./searchProduct.js";
 
 const productsList = document.querySelector("#products");
-// const search = document.querySelector("#search");
 
-// let check = false;
-// search.addEventListener("click", () => {
-//     check = !check;
-//     if (check == true) {
-//         document.querySelector(
-//             "#searchBar"
-//         ).innerHTML += `<input type="text" style="width:180%;" class="form-control mb-2" placeholder="Enter Your Shirt" id="form">`;
-//         let log = document.querySelector("#form")
-//         log.addEventListener("keyup", () => {
-//             const input = document.querySelector("#form");
-//             let filter = input.value.toLowerCase();
-//             let infoOfProduct = productsList.getElementsByClassName("card");
-//             for (let i = 0; i < infoOfProduct.length; i++) {
-//                 let txtValue = infoOfProduct[i].textContent;
-//                 if (txtValue.toLowerCase().indexOf(filter) > -1) {
-//                     infoOfProduct[i].style.display = "";
-//                 } else {
-//                     infoOfProduct[i].style.display = "none";
-//                 }
-//             }
-//         });
-//     } else document.querySelector("#searchBar").innerHTML = "";
-// });
-// search;
 listProduct();
 
 function listProduct() {
@@ -71,41 +45,3 @@ function listProduct() {
 
     }
 }
-
-// let addCart = document.querySelectorAll("#add");
-// let cartNumbers = document.querySelector("#cart");
-
-// let quality = 0;
-// if (localStorage.length < 1) {
-//     localStorage.setItem("amount", 0);
-//     cartNumbers.innerHTML = `${localStorage.getItem("amount")}`;
-// } else {
-//     cartNumbers.innerHTML = `${localStorage.getItem("amount")}`;
-// }
-// let amount = localStorage.getItem("amount");
-// console.log(localStorage.length);
-// for (let i = 0; i < addCart.length; i++) {
-//     let cart = []
-//     addCart[i].addEventListener("click", () => {
-//         if (product[i].productId != cart) {
-//             cart = product[i].productId
-//             localStorage.setItem(product[i].productId, quality = 1)
-//         } else {
-//             localStorage.setItem(product[i].productId, quality = 1)
-//         }
-//         alert(`ADD ${product[i].productName} TO CART ! ! ! `)
-//         localStorage.setItem("amount", ++amount); //เพิ่มจำนวนสินค้าในตะกร้า
-//         cartNumbers.innerHTML = `${amount}`;
-//     })
-// }
-
-// let clear = document.querySelector("#clear");
-// clear.addEventListener("click", () => {
-//     localStorage.setItem("amount", 0);
-//     amount = localStorage.getItem("amount")
-//     cartNumbers.innerHTML = `${amount}`;
-//     for (let i = 0; i < product.length; i++) {
-//         localStorage.removeItem(product[i].productId)
-
-//     }
-// })
